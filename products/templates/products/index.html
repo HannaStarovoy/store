@@ -1,0 +1,166 @@
+{% extends 'products/base.html' %}
+{% load static %}
+
+<!doctype html>
+<html>
+
+<head>
+	<!-- Meta Data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Comercio - Fashion Shop Ecommerce HTML Template</title>
+
+{% block css %}
+
+	<!-- Fav Icon -->
+	<link rel="icon" type="image/png" sizes="32x32" href="{% static 'vendor/ex/assets/img/fav-icons/favicon-32x32.png'%}">
+
+    <!-- Dependency Styles -->
+    <link rel="stylesheet" href="{% static 'vendor/ex/dependencies/bootstrap/css/bootstrap.min.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'vendor/ex/dependencies/fontawesome/css/fontawesome-all.min.css'%}" type="text/css">
+	<link rel="stylesheet" href="{% static 'vendor/ex/dependencies/owl.carousel/css/owl.theme.default.min.css'%}" type="text/css">
+	<link rel="stylesheet" href="{% static 'vendor/ex/dependencies/flaticon/css/flaticon.css'%}" type="text/css">
+	<link rel="stylesheet" href="{% static 'vendor/ex/dependencies/wow/css/animate.css'%}" type="text/css">
+	<link rel="stylesheet" href="{% static 'vendor/ex/dependencies/jquery-ui/css/jquery-ui.css'%}" type="text/css">
+	<link rel="stylesheet" href="{% static 'vendor/ex/dependencies/venobox/css/venobox.css'%}" type="text/css">
+
+    	<!-- Site Stylesheet -->
+	<link rel="stylesheet" href="{% static 'vendor/ex/assets/css/app.css' %}" type="text/css">
+{% endblock %}
+
+</head>
+
+<body id="home-version-1" class="home-version-1" data-style="default">
+
+	<div class="site-content">
+
+{% block content %}
+		<section class="slider-wrapper">
+			<div class="slider-start slider-1 owl-carousel owl-theme">
+
+				<div class="item">
+					<img src="{% static 'vendor/ex/media/images/wallpaper.jpg' %}" alt="">
+					<div class="container-fluid custom-container slider-content">
+						<div class="row align-items-center">
+
+							<div class="col-12 col-sm-8 col-md-8 col-lg-6 ml-auto">
+								<div class="slider-text ">
+									<h4 class="animated fadeInUp"><span>BRAND NEW</span> COLLECTION</h4>
+									<h1 class="animated fadeInUp">COMERCIO SHOP</h1>
+									<p class="animated fadeInUp">Autem vel eum iriure dolor in molestie consequat vel illum dolore eu feugiat nulla facilisis at vero eros.</p>
+									<a class="animated fadeInUp btn-two" href="{% url 'products:index' %}">SHOP NOW</a>
+								</div>
+							</div>
+							<!-- Col End -->
+						</div>
+						<!-- Row End -->
+					</div>
+				</div>
+			</div>
+		</section>
+{% endblock %}
+
+
+
+	</div>
+	<!-- /#site -->
+
+
+		<footer class="footer-widget-area">
+			<div class="container-fluid custom-container">
+				<div class="row">
+					<div class="col-md-6 col-lg-3 col-xl-3">
+						<div class="footer-widget">
+							<div class="logo">
+								<a href="#">
+							<img src="media/images/logo2.png" alt="">
+						</a>
+							</div>
+							<p>Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat vel illum dolore eu olestie consequat Autem vel eum iriure dolor.</p>
+							<div class="social">
+								<ul>
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+									<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /.col-xl-3 -->
+					<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="footer-widget">
+							<h3>our shop</h3>
+							<div class="footer-menu">
+								<ul>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Browse Products</a></li>
+									<li><a href="#">Read Our Blog</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /.col-xl-3 -->
+					<div class="col-sm-6 col-md-6 col-lg-3 col-xl-3">
+						<div class="footer-widget">
+							<h3>COLLECTIONS</h3>
+							<div class="footer-menu">
+								<ul>
+									<li><a href="#">Summer 2018</a></li>
+									<li><a href="#">Women's Dresses</a></li>
+									<li><a href="#">Women's Jackets</a></li>
+									<li><a href="#">Men's Shirts</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /.col-xl-3 -->
+					<div class="col-md-6 col-lg-3 col-xl-3">
+						<div class="footer-widget">
+							<h3>Payment Methods</h3>
+							<p>Autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat vel illum</p>
+							<div class="payment-link">
+								<ul>
+									<li><a href="#"><img src="media/images/p1.png" alt=""></a></li>
+									<li><a href="#"><img src="media/images/p2.png" alt=""></a></li>
+									<li><a href="#"><img src="media/images/p3.png" alt=""></a></li>
+									<li><a href="#"><img src="media/images/p4.png" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- <div class="footer-widget">
+					<h3>News & Updates</h3>
+					<p>Sign up to get the latest on sales, new releases and more …</p>
+					<div class="footer-subscribe-wrapper">
+						<input placeholder="Enter Keyword" type="text">
+						<button type="submit">SUBSCRIBE</button>
+					</div>
+
+				</div> -->
+					</div>
+					<!-- /.col-xl-3 -->
+				</div>
+				<div class="footer-bottom">
+					<div class="row">
+						<div class="col-12">
+							<p>Copyright © <span>2018</span> ThemeIM Solution • Designed by <a href="#">ThemeIM</a></p>
+						</div>
+						<!-- /.col-xl-6 -->
+
+					</div>
+					<!-- /.row -->
+				</div>
+			</div>
+			<!-- container-fluid -->
+		</footer>
+		<!-- footer-widget-area -->
+
+
+</body>
+
+</html>
